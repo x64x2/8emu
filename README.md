@@ -9,7 +9,6 @@
 
 Install my-project with this 
 
-```bash
+```
    Git clone chip8-emulator
-  cd my-chip8-emulator
 ```
