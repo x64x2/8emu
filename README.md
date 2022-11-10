@@ -6,7 +6,8 @@
 >It was made to allow video games to be more easily programmed for these computers
 
 ### Features of cached intrepreter
-check scheduler
+
+     check scheduler
 
     fetch opcode from memory
     
