@@ -5,6 +5,15 @@
 >CHIP-8 programs are run on a CHIP-8 virtual machine
 >It was made to allow video games to be more easily programmed for these computers
 
+### Features of cached intrepreter
+check scheduler
+
+    fetch opcode from memory
+    
+    decode opcode 
+    
+    run instruction handler
+
 ## Installation
 
 Install my-project with this 
