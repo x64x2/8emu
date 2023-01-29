@@ -3,7 +3,7 @@ CC = gcc
 CCFLAGS += -Wall -Wextra
 UNAME := $(shell uname)
 ifeq ($(UNAME), Eric)
-LDFLAGS = -framework OpenGL -framework GLUT
+LDFLAGS = -framework SDL -framework GLUT
 else
 LDFLAGS = -lGL -lglut
 endif
