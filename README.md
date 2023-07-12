@@ -1,7 +1,6 @@
-# CHIP-8 Emulator
-
-This is a CHIP-8 emulator written in C. The CHIP-8 is a simple, interpreted programming language that was used on computers in the 1970s and 1980s. It was mainly used to make simple games and was popular on the COSMAC VIP, Telmac 1800, and other home computers.
-Building and Running
+ The CHIP-8 was used on computers in the 1970s and 1980s. It was mainly used to make simple games and was popular on the COSMAC VIP, Telmac 1800, and other home computers.
+ 
+# Building and Running
 
 To build the emulator, you will need a C compiler. Navigate to the root directory of the emulator and run the following command:
 
@@ -21,7 +20,8 @@ The CHIP-8 has a hexadecimal keypad with the following layout:
 A 0 B F
 
 To use the emulator, you can use the corresponding keys on your keyboard to input commands.
-Additional Features
+
+### Additional Features
 
 In addition to basic CHIP-8 emulation, this emulator also includes the following features:
 
