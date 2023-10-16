@@ -13,7 +13,7 @@ Instead of using machine language for the VIP’s CDP1802 processor, you could t
 
 ### Credits
 
-[link](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
+[Link](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
 
 
 
