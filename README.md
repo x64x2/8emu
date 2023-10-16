@@ -1,37 +1,19 @@
- The CHIP-8 was used on computers in the 1970s and 1980s. It was mainly used to make simple games and was popular on the COSMAC VIP, Telmac 1800, and other home computers.
- 
-# Building and Running
+ CHIP-8 was created by a chad called Joe Weisbecker for the COSMAC VIP microcomputer. It was intended as a much simpler way to make small programs and games for the computer back when computers were suckless. 
 
-To build the emulator, you will need a C compiler. Navigate to the root directory of the emulator and run the following command:
+Instead of using machine language for the VIP’s CDP1802 processor, you could type in hexadecimal instructions that resembled machine code, but which were more high-level, and interpreted on the fly by a small program (the CHIP-8 emulator/interpreter).
 
- > make
+# Installation
+- Just compile and run > _i did mine with **TCC**_
 
-This will build the emulator and create an executable file called chip8. To run the emulator, simply pass the path to a CHIP-8 ROM as an argument:
+### TODO
 
-> ./chip8 path/to/rom
-
-## Controls
-
-The CHIP-8 has a hexadecimal keypad with the following layout:
-
-1 2 3 C
-4 5 6 D
-7 8 9 E
-A 0 B F
-
-To use the emulator, you can use the corresponding keys on your keyboard to input commands.
-
-### Additional Features
-
-In addition to basic CHIP-8 emulation, this emulator also includes the following features:
-
-    A dynamic recompiler
+    A dynamic recompiler using dynarec/jit library
     Support for loading ROMs from the command line
     A cached interpreter
 
 ### Credits
 
-This emulator was developed by Eric and is based on the CHIP-8 specification provided by Cowgod's Chip-8 Technical Reference.
+[link](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
 
 
 
