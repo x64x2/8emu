@@ -1,8 +1,8 @@
 # Compiler Flags
-CC = gcc
+CC = tcc
 CCFLAGS += -Wall -Wextra
 UNAME := $(shell uname)
-ifeq ($(UNAME), Eric)
+ifeq ($(UNAME), s0mt0chukwu)
 LDFLAGS = -framework SDL -framework GLUT
 else
 LDFLAGS = -lGL -lglut
@@ -10,8 +10,8 @@ endif
 
 all: play
 
-play: chip8.c play.c
-	$(CC) $(CCFLAGS) chip8.c play.c -o play $(LDFLAGS)
+play: SRC.c
+	$(CC) $(CCFLAGS) SRC.c -o play $(LDFLAGS)
 
 clean:
 	rm -f play
