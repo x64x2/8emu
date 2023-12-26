@@ -3,7 +3,7 @@
 Instead of using machine language for the VIP’s CDP1802 processor, you could type in hexadecimal instructions that resembled machine code, but which were more high-level, and interpreted on the fly by a small program (the CHIP-8 emulator/interpreter).
 
 # Installation
-- Just compile and run > _i did mine with **TCC**_
+- Just compile and run
 
 ### TODO
 
@@ -13,7 +13,7 @@ Instead of using machine language for the VIP’s CDP1802 processor, you could t
 
 ### Credits
 
-[Link](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
+[Guide](https://multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
 
 
 
