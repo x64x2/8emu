@@ -1,6 +1,6 @@
- CHIP-8 was created by a chad called Joe Weisbecker for the COSMAC VIP microcomputer. It was intended as a much simpler way to make small programs and games for the computer back when computers were suckless. 
+ CHIP-8 was created by a chad named Joe Weisbecker for the COSMAC VIP microcomputer. It was intended as a much simpler way to make small programs and games for the computer back when computers were suckless. 
 
-Instead of using machine language for the VIP’s CDP1802 processor, you could type in hexadecimal instructions that resembled machine code, but which were more high-level, and interpreted on the fly by a small program (the CHIP-8 emulator/interpreter).
+Instead of using machine language for the VIP’s CDP1802 processor, you could type in hexadecimal instructions that resembled machine code, but which was more high-level.
 
 # Installation
 - Just compile and run
