@@ -1,12 +1,5 @@
 
-# Intro
-
 Basic chip8 emulator
-
-## Usage
-```
-chip8 /path/to/rom
-```
 
 # Installation
 - Just compile and run
