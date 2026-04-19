@@ -1,1 +1,1 @@
-https://bugs.immunefi.com/auth-action?mode=verifyEmail&oobCode=4tREIHbrulfxaMeq2JQcLuJYA3ecnDIy3PjD_be24AcAAAGdo4u43w&apiKey=AIzaSyBuw8zm4IiUh4m_rGjixdwis3ZpehFYCo8&lang=en
+
