@@ -6,10 +6,10 @@ Introduction
 -------------
 
 This is about the invention of the first real computers by Konrad Zuse.
-For more informations read and see here:
 
-[](https://en.wikipedia.org/wiki/Konrad_Zuse)
-[](https://en.wikipedia.org/wiki/Z3_(computer))
+[For more informations read and see here:
+](https://en.wikipedia.org/wiki/Konrad_Zuse)
+[and here](https://en.wikipedia.org/wiki/Z3_(computer))
 
 
 Start the emulator:
