@@ -1,172 +1,88 @@
 
-fesr snd trembling kiekergrsd
-beypnf good nd evil nietsczhe
-democraxy the god thst fsiled
-steganography in digyrital media jessica fridrich
-
-c programming lang kerningham ritvhie
-art of xomputer programming knuth
-reflectipn pn trustong trust ken thompson
-applied crypto bruce schneier
-discrete msthematics kenneth rosen
-a mathrmatical theory of communication claude shsnnon
-nuclesr wsr surbival skills cresson kearny
-the art of memoey forensics ligh case levy
-the arrl hanfbook for radio comm
-bitcoim srandsrd saifedean
-human action ludwog von mises
-the blsck swan nassim tsleb
-the collapse of complex societies joseph tainter
-the byzantine general problem lamport
-uncle fester body smor
+Z3 - an emulator of a Zuse Z3 computer.
 
 
-the shock doctrine nqomi klein
+Introduction
+-------------
 
-the temple of set michsel aquino
-children pf lucifer ruben van luijk
-lords of the left hand psth stephem flowers
-dsrk shsmans neil whitehead
-daemonolatry goetia s connolly
-game theory martin davis
-designing data intensive app
-hints for computrr system design lampson
-practocal crypto schneier
-marine corps sntenns constriction
-practicsl electronics fpr inventprs
+This is about the invention of the first real computers by Konrad Zuse.
+For more informations read and see here:
+
+[](https://en.wikipedia.org/wiki/Konrad_Zuse)
+[](https://en.wikipedia.org/wiki/Z3_(computer))
 
 
-the engineerand price sysrem thorsrein verblen
-sevret dont tell the encyclopaedia of hypnoticism carla emery
+Start the emulator:
+-------------------
+main.c [ARGUMENTS]
+
+run and compile
+
+to run the emulator,
+display all comments (-d) and display a dump at end (-dump)
 
 
-understanding media mvluhan
-anti tech revolution ted ksczynski
-the techie wet dresms
-practical cetptography schneier
+Arguments:
+----------
+-p[FILENAME]      - punch tape reader, specify the file which is read by
+                    the emulator, the file which holds the program code
+                    you want to run.
+-t                - trace, turns on the trace and displays every line from
+                    the punch tape which is executed.
+-d                - display comments. Comments in the punch tape file, starting
+                    with # will be displayed at run time.
+-dump             - display a post mortem dump at end of the program
+-v                - displays the version of the emulator
 
-godel escher bach 
-the conspiracy against zhe human race ligotti
-power abd liberty rothbard
-
-tge ego and its own max stirner
-the orince
-the unambomber manifesto
-
-law legislation and liberyy
-the rpad to serfdom hayek
-
-beyond fear: thinking sensibly about security on an uncertain world
-liars and outliers: enabling trust thst society needs to tjrive schneier
-fear and trembling soren
-treaaure island nicholas shaxson 
-
-game theory martin davis
-the 
-
-the black sun stanton marlan
-future shock toeffler
-code book simon singh
-the shock doctribe naomi klein
-do android dream or rlecrric sheep philip dick
-
-no logo naomi klein
-thus spoke zathusthra friedrich nietzche 
-
-the trial kafka
-operating system concepts silberschatz
-computer networking a top down spprosch kurose
-computer organization and desigm patterson hennessy
-tge shock doctrine naomi klein
-this machine kill secrets andy greenberg 
-the perenisl philisophy aldous huxley
-book of lies
-the secret doctrone hp blavatsky
-msgick crowley
-the mass psychology pf fascism wilhelm reich
-the way of the mystoc wozard matthew baker
-dark mirtor barton gellman
-the chaos machine fisher
-tzbes: a joutney to the center of the ijternet blum
-mamfucturung consent chomsky
-crowds and oower elias canetti
-antifragile nassim taleb
+Technical specification:
+------------------------
+Registers          - 2 floating point numbers, r1 and r2
+Memory             - 64 floating point numbers (0-63)
+Input              - one punch tape reader for the program souce code
+                   - keyboard for numerical input (floating point)
+Output             - is displayed on screen
 
 
-the bitvoin standsrd saifedean 
-debt graeber
+Assembler commands:
+-------------------
+These are the assembler commands the Z3 emulator understands.
+
+PR z    - load memory cell z into register 1 or 2, depending on if r1 is
+          already occupied or not
+PS z    - store register 1 in memory cell z
+LA      - add r1 and r2, result is stored in r1, r2 cleared
+LS      - subtract r2 from r1, result is stored in r1, r2 cleared
+LM      - multiply r1 with r2, result is stored in r1, r2 cleared
+LI      - divide r1 by r2, result is stored in r1, r2 cleared
+LW      - calculate the square root of r1, result is in r1
+LU      - read floating point number from keyboard into r1 or r2, depending on 
+          if r1 is already occupied or not
+LD      - display register 1 as a floating point number.
+          (the Z3 could only display binary)
+          Both registers, r1 and r2, are cleared, un-occupied
+
+Occupied???
+-----------
+Yes, the two registers of the Z3 can be occupied, filled with content, or not.
+
+So, LU reads a number from keyboard into register 1. If register 1 is already
+occupied, has a value, the number is stored in register 2.
+This behaviour is somehow like a stack.
+
+LA adds r1 and r2, stores the result in r1 and clears, un-occupies, r2.
+r1 is still occupied, it has the result of the addition.
+
+LD displays the content of r1 and clears both registers, r1 and r2.
+So the next read from keyboard goes into r1, because both registers are
+not occupied.
+Then, the next read from keyboard goes into register 2, because r1 is already
+occupied.
 
 
-designing data intensive application
-a canticle for leibowitz walter miller
-the cjildten of mrn pd jsmes
+To do:
+------
+Find out if this is really compatible with a real Z3.
+It seems to be really hard to get informations how the Z3 was used or at least some source code they used with the punch tapes.
 
-
-shockwave rider by John Brunner 
-schismatrix by Bruce sterling 
- reloaded by Stacy gillis
-the hacker's crackdown: law and disorder on the electronic frontier by Bruce sterling 
-Agrippa by William Gibson 
-beisbol libre by Eduardo
-
-Unix a history and memoir by Brian kerninghan 
-valis philip dick
- 
-dive into systems by Suzanne Matthew 
-hatcher's Notebook by Julian hatcher 
-life with Unix: guide for everyone by don libes
-
-technics and Human development 
-technics and civilization by Lewis Mumfo
-
-Strands new concepts in parallel programming by Ian foster 
-
-Information warfare and security by denning
-
-
-Exploring steganography: seeing the unseen by Johnson and jajodia 
-
-Security and privacy by milojicic 
-
-the Linux programmer's toolbox by fusco
-
-Hints for computer system design by lampson
-open society pịsybook scott 
-beyone good snd evil nietzche
-
-praticsl electronics for inventors
-things to make and do in the fourth dimension by parker 
-flying machines: construction and operation by wj 
-Marine Corps institute antenna construction and 
- propagation of radio waves  
-platform Capitalism by Nick srnicek
-a short history of nearly everything by Bryson 
-rebel city hong Kong's year of water and fire
-Niubi! the real Chinese you were never taught in school by Eveline Chao 
-
-culture jam: the uncooling of America by kalle lasn
-cybernetics by wiener
-God and golem  
-
-the cultural logic of computation by David Columbia
-
-rationality from ai to zombir eliezer yudkwosky
-
-
-becoming self sufficient for siz months dr dave
-basic soapmaking elizabeth letcavage
- uniz handbook evi nementh
-self sufficient guide anf how to live it john seymour
-how to make your body armor piercing bullets by uncle fester
-
-beyond gpod and evil nietzche
-
-computer science from sccratch david kopec 
-thr blsck box society frsnk pasquale
-the power of ritusl in pre history brian hayden
-foucault pendulum umberto eco
-cannibalism, blood drinking and high adept satanism kerth barker
-
-the demon haubted world sagan
-
+Z4, please let me know :)
 
